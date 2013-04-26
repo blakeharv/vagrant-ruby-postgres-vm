@@ -1,11 +1,20 @@
-Sweet Vagrant Box with Postgres, Ruby, and VSH
-==============================================
+Sweet Linux VM with Postgres, Ruby, and ZSH
+===========================================
 
-A Vagrant box setup with Postgres 9.1 + Ruby 2.0.0 + zsh + vcprompt for Rails
+A Vagrant box setup with Postgres 9.1 + Ruby 2.0.0 + zsh/vcprompt for Rails
 
-(Setup Instructions to come)
+## Features
+- Use Postgres for your local DB. Great for deploying to Heroku
+- Sets you up with a fresh development database ready for Rails
+- Sets up RVM, Bundler, and Ruby-2.0.0
+- Configures zsh + vcprompt (displays git branch info) for a better console experience
+- Use a shared folder to keep your codebase repo separate from the VM repo
+- NFS folder sharing helps keep your tests fast
+- Configuration options to speed up your VM
 
-### Pre-setup
+## Pre-setup
 1. Download Vagrant: http://www.vagrantup.com/
 2. Download VirtualBox: https://www.virtualbox.org/wiki/Downloads
 3. Install them!
+
+(Setup Instructions - WIP)
