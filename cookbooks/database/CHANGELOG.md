@@ -1,3 +1,43 @@
+## v1.3.12:
+
+* [COOK-850] - `postgresql_database_user` doesn't have example
+
+## v1.3.10:
+
+* [COOK-2117] - undefined variable `grant_statement` in mysql user
+  provider
+
+## v1.3.8:
+
+* [COOK-1896] - Escape command
+* [COOK-2047] - Chef::Provider::Database::MysqlUser action :grant
+  improperly quotes `username`@`host` string
+* [COOK-2060] - Mysql::Error: Table '*.*' doesn't exist when privileges
+  include SELECT and database/table attributes are nil
+* [COOK-2062] - Remove backticks from database name when using wildcard
+
+## v1.3.6:
+
+* [COOK-1688] - fix typo in readme and add amazon linux to supported
+  platforms
+
+## v1.3.4:
+
+* [COOK-1561] - depend on mysql 1.3.0+ explicitly
+* depend on postgresql 1.0.0 explicitly
+
+## v1.3.2:
+
+* Update the version for release (oops)
+
+## v1.3.0:
+
+* [COOK-932] - Add mysql recipe to conveniently include mysql::ruby
+* [COOK-1228] - database resource should be able to execute scripts on disk
+* [COOK-1291] - make the snapshot retention policy less confusing
+* [COOK-1401] - Allow to specify the collation of new databases
+* [COOK-1534] - Add postgresql recipe to conveniently include postgresql::ruby
+
 ## v1.2.0:
 
 * [COOK-970] - workaround for disk [re]naming on ubuntu 11.04+

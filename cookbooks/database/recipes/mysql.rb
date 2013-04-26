@@ -1,14 +1,14 @@
 #
-# Cookbook Name:: phppgadmin
-# Attributes:: phppgadmin
+# Author:: Jesse Howarth (<him@jessehowarth.com>)
 #
-# Copyright 2011, Ren Dao Solutions BVBA
+# Copyright:: Copyright (c) 2012, Opscode, Inc. (<legal@opscode.com>)
+# License:: Apache License, Version 2.0
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
+#    http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -17,7 +17,4 @@
 # limitations under the License.
 #
 
-default[:phppgadmin][:webserver] = "nginx"
-default[:phppgadmin][:port] = 4000
-default[:phppgadmin][:hostname] = 'localhost'
-default[:phppgadmin][:log_dir] = '/var/log/phppgadmin'
+include_recipe "mysql::ruby"
