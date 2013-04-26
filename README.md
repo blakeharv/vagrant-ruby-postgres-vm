@@ -18,3 +18,8 @@ Don't mess around with wonky local development setups for Rails. Use a sweet VM 
 3. Install them!
 
 (Setup Instructions - WIP)
+
+## Credits / Inspiration
+
+https://github.com/richarddong | https://github.com/richarddong/vagrant-ruby-rvm
+https://github.com/opscode | https://github.com/opscode-cookbooks/
