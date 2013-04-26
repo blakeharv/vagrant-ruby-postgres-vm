@@ -1,7 +1,7 @@
-Sweet Linux VM with Postgres 9.1, Ruby 2.0, and ZSH
+Sweet Rails VM with Postgres 9.1, Ruby 2.0, and ZSH
 ===================================================
 
-A Vagrant box setup with Postgres 9.1 + Ruby 2.0.0 + zsh/vcprompt for Rails
+Don't mess around with wonky local development setups for Rails. Use a sweet VM to streamline your workflow.
 
 ## Features
 - Use Postgres for your local DB. Great for deploying to Heroku
