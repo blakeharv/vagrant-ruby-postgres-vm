@@ -1,5 +1,5 @@
-Sweet Linux VM with Postgres, Ruby, and ZSH
-===========================================
+Sweet Linux VM with Postgres 9.1, Ruby 2.0, and ZSH
+===================================================
 
 A Vagrant box setup with Postgres 9.1 + Ruby 2.0.0 + zsh/vcprompt for Rails
 
