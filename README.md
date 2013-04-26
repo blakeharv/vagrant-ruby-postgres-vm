@@ -21,6 +21,6 @@ Don't mess around with wonky local development setups for Rails. Use a sweet VM 
 
 ## Credits / Inspiration
 
-Vagrant Ruby-2.0 Box: [https://github.com/richarddong]Richard Dong | https://github.com/richarddong/vagrant-ruby-rvm
+Vagrant Ruby-2.0 Box: [Richard Dong](https://github.com/richarddong) | https://github.com/richarddong/vagrant-ruby-rvm
 
-Chef & Cookbooks: [https://github.com/opscode]Opscode | https://github.com/opscode-cookbooks/
+Chef & Cookbooks: [Opscode](https://github.com/opscode) | https://github.com/opscode-cookbooks/
