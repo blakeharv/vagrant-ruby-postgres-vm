@@ -42,5 +42,6 @@ The following places can be customized to fit your individual needs:
 - Speed up your VM: [Vagrantfile#L22](https://github.com/blakeharv/vagrant-ruby-postgres-vm/blob/master/Vagrantfile#L22)
 
 ## Credits / Inspiration
+zsh and vcprompt config: [Skim](https://github.com/sl4m) and [Myles](https://github.com/mylesmegyesi) from [8th Light](https://github.com/8thlight)
 Vagrant Ruby-2.0 Box: [Richard Dong](https://github.com/richarddong) | https://github.com/richarddong/vagrant-ruby-rvm  
 Chef & Cookbooks: [Opscode](https://github.com/opscode) | https://github.com/opscode-cookbooks/
