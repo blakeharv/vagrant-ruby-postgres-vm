@@ -16,9 +16,9 @@ Don't mess around with wonky local development setups for Rails. Use a sweet VM 
 1. Download Vagrant: http://www.vagrantup.com/
 2. Download VirtualBox: https://www.virtualbox.org/wiki/Downloads
 3. Install them!
-4. Clone this Repo '$ git clone git@github.com:blakeharv/vagrant-ruby-postgres-vm.git'
-5. From the cloned repo '$ vagrant up'
-6. Log into the VM '$ vagrant ssh'
+4. Clone this Repo `$ git clone git@github.com:blakeharv/vagrant-ruby-postgres-vm.git`
+5. From the cloned repo `$ vagrant up`
+6. Log into the VM `$ vagrant ssh`
 
 The default Postgres settings will configure 1 user and database. You can use the following settings in your Rails database.yml
 ```yml
