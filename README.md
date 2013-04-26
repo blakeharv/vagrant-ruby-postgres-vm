@@ -18,7 +18,7 @@ Don't mess around with wonky local development setups for Rails. Use a VM to str
 3. Install them!
 4. Clone this Repo `$ git clone git@github.com:blakeharv/vagrant-ruby-postgres-vm.git`
 5. From the cloned repo `$ vagrant up`
-6. During the install you may be prompted for a password to enable folder sharing. On OSX this is just your regular account password (like when you login or install software).
+6. During the install you may be prompted for a password to enable folder sharing. On OSX this is just your regular account password (like when you login into your computer or install software).
 7. Log into the VM `$ vagrant ssh`
 
 The default Postgres settings will configure 1 user and database. You can use the following settings in your Rails database.yml (See the customization settings below for configuring your databases and users)
