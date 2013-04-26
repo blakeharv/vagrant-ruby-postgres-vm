@@ -1,7 +1,7 @@
-Sweet Ubuntu VM with Postgres 9.1, Ruby 2.0, and ZSH
-===================================================
+Aweomse Ubuntu VM with Postgres 9.1, Ruby 2.0, and ZSH
+======================================================
 
-Don't mess around with wonky local development setups for Rails. Use a sweet VM to streamline your workflow!
+Don't mess around with wonky local development setups for Rails. Use a VM to streamline your workflow!
 
 ## Features
 - Use Postgres for your local DB. Great for deploying to Heroku
@@ -20,7 +20,7 @@ Don't mess around with wonky local development setups for Rails. Use a sweet VM 
 5. From the cloned repo `$ vagrant up`
 6. Log into the VM `$ vagrant ssh`
 
-The default Postgres settings will configure 1 user and database. You can use the following settings in your Rails database.yml
+The default Postgres settings will configure 1 user and database. You can use the following settings in your Rails database.yml (See the customization settings below for configuring your databases and users)
 ```yml
 development:
   adapter: postgresql
@@ -30,14 +30,16 @@ development:
   username: vagrant
   password: password
 ```
-See the customization settings below for configuring your databases and users.
+
 
 ## Customization
+The following places can be customized to fit your individual needs:  
 - Add additional Ubuntu packages: [bootstrap.sh#L9](https://github.com/blakeharv/vagrant-ruby-postgres-vm/blob/master/bootstrap.sh#L9)
 - Set your project folder: [Vagrantfile#L19](https://github.com/blakeharv/vagrant-ruby-postgres-vm/blob/master/Vagrantfile#L19)
 - Add ports: [Vagrantfile#L30](https://github.com/blakeharv/vagrant-ruby-postgres-vm/blob/master/Vagrantfile#L30)
 - Set your timezone: [/cookbooks/timezone/recipes/default.rb](https://github.com/blakeharv/vagrant-ruby-postgres-vm/blob/master/cookbooks/timezone/recipes/default.rb)
-- Set your default Postgres user and DB: [/cookbooks/postgresql/recipes/setup.rb#L20-L27](https://github.com/blakeharv/vagrant-ruby-postgres-vm/blob/master/cookbooks/postgresql/recipes/setup.rb#L20-L27)
+- Set your Postgres users and databases: [/cookbooks/postgresql/recipes/setup.rb#L20-L27](https://github.com/blakeharv/vagrant-ruby-postgres-vm/blob/master/cookbooks/postgresql/recipes/setup.rb#L20-L27)
+- Speed up your VM: [Vagrantfile#L22](https://github.com/blakeharv/vagrant-ruby-postgres-vm/blob/master/Vagrantfile#L22)
 
 ## Credits / Inspiration
 Vagrant Ruby-2.0 Box: [Richard Dong](https://github.com/richarddong) | https://github.com/richarddong/vagrant-ruby-rvm  
