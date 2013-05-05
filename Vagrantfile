@@ -16,7 +16,7 @@ Vagrant::Config.run do |config|
   #
   # You can configure multiple shares like this. Great for working on local gem versions.
   #
-  config.vm.share_folder('code', '/home/vagrant/code', '../tealeaf-postit', create: true, nfs: true)
+  config.vm.share_folder('code', '/home/vagrant/code', '.', create: true, nfs: true)
   
   # Increases memory allocated for VM. Uncomment and modify memory and cpus
   #config.vm.customize ["modifyvm", :id, "--memory", 4096, "--cpus", 2]
@@ -26,6 +26,7 @@ Vagrant::Config.run do |config|
   # Forward ports for Rails (3000) and Postgres (5432)
   config.vm.forward_port 3000, 3000
   config.vm.forward_port 5432, 5432
+  config.vm.forward_port 8080, 8080
 
   # Add additional ports as needed
   # Unicorn:
