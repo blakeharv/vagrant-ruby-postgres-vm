@@ -32,7 +32,7 @@ setup_items.each do |setup|
   # in the server cookbook. It's available in
   #   node['postgresql']['password']['postgres']
   pg_connection_info = {
-    :host => "localhost",
+    :host => "192.168.5.10",
     :port => "5432",
     :username => "postgres",
     :password => node['postgresql']['password']['postgres']

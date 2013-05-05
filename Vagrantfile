@@ -16,7 +16,7 @@ Vagrant::Config.run do |config|
   #
   # You can configure multiple shares like this. Great for working on local gem versions.
   #
-  config.vm.share_folder('code', '/home/vagrant/code', '.', create: true, nfs: true)
+  config.vm.share_folder('code', '/home/vagrant/code', '../tealeaf-postit', create: true, nfs: true)
   
   # Increases memory allocated for VM. Uncomment and modify memory and cpus
   #config.vm.customize ["modifyvm", :id, "--memory", 4096, "--cpus", 2]
@@ -41,7 +41,15 @@ Vagrant::Config.run do |config|
     chef.json = {
       :postgresql => {
         :version  => "9.1",
-        :password => { :postgres => "password"}
+        :config => { :listen_addresses => '192.168.5.10'},
+        :password => { :postgres => 'password'},
+        :pg_hba => [{
+          :type => 'host',
+          :db => 'all',
+          :user => 'all',
+          :addr => '192.168.5.1/24',
+          :method => 'md5'
+        }]
       }
     }
   end
